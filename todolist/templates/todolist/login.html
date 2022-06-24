@@ -1,0 +1,26 @@
+{% extends 'todolist/main.html ' %}
+{% block content %}
+<div class="header-bar">
+    <h1>LOGIN PAGE</h1>
+</div>
+
+<div class="card-body">
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input class="button" type="submit" name="" id="" Value="Login">
+    </form>
+    <p>Don't have an account?<a href="{% url 'registerpage' %}">Register</a></p>
+    
+</div>
+
+
+
+
+
+  
+
+    
+</div>
+{% endblock content %}
+
